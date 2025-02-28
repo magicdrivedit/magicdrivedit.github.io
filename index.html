@@ -107,18 +107,18 @@ for Autonomous Driving with Adaptive Control">
           <div class="content has-text-justified">
             <p>
               The rapid advancement of diffusion models has greatly improved video synthesis, especially in controllable
-              video generation, which is essential for applications like autonomous driving. However, existing methods
-              are limited by scalability and how control conditions are integrated, failing to meet the needs for
-              high-resolution and long videos for autonomous driving applications. In this paper, we introduce <span
-                class="dnerf">MagicDriveDiT</span>, a novel approach based on the DiT architecture, and tackle these
-              challenges. Our method enhances scalability through flow matching and employs a progressive training
-              strategy to manage complex scenarios. By incorporating spatial-temporal conditional encoding, <span
-                class="dnerf">MagicDriveDiT</span> achieves precise control over spatial-temporal latents. Comprehensive
-              experiments show its superior performance in generating realistic street scene videos with higher
-              resolution and more frames.
-              <span class="dnerf">MagicDriveDiT</span> significantly improves video generation quality and
-              spatial-temporal controls, expanding its potential applications
-              across various tasks in autonomous driving.
+              video generation, which is vital for applications like autonomous driving. Although DiT with 3D VAE has
+              become a standard framework for video generation, it introduces challenges in controllable driving video
+              generation, especially for geometry control, rendering existing control methods ineffective. To address
+              these issues, we propose <span class="dnerf">MagicDriveDiT</span> , a novel approach that integrates the
+              MVDiT block and spatial-temporal conditional encoding to enable multi-view video generation and precise
+              geometric control. Additionally, we introduce an efficient method for obtaining contextual descriptions
+              for videos to support diverse textual control, along with a progressive training strategy using mixed
+              video data to enhance training efficiency and generalizability. Consequently, <span
+                class="dnerf">MagicDriveDiT</span> enables unprecedented video resolution and frame count in driving
+              video synthesis with rich contextual control and geometric controls. Extensive experiments demonstrate
+              <span class="dnerf">MagicDriveDiT</span> ’s ability to generate high-resolution and long driving videos,
+              unlocking broader applications in autonomous driving.
             </p>
           </div>
         </div>
@@ -627,7 +627,7 @@ for Autonomous Driving with Adaptive Control">
           trajectory from the validation split of the Waymo Open Dataset.
           We use different text prompts to change the
           weather/time-of-day/background of each video (<mark>from Sec. 4.4 of our
-          paper</mark>). All videos are with 3&times;848&times;1600, 193 frames at 10
+            paper</mark>). All videos are with 3&times;848&times;1600, 193 frames at 10
           FPS from single inference. Only 3 same-sized views are available in
           Waymo for training.</p>
 
