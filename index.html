@@ -79,71 +79,6 @@ for Autonomous Driving with Adaptive Control">
     </div>
   </section>
 
-  <section class="hero is-small is-light">
-    <div class="hero-body">
-      <div class="container">
-        <h2 class="title is-3"><mark>Update for Rebuttal</mark>: Fine-tuned
-          results on Waymo Open Dataset.</h2>
-
-        <p class="content is-size-5">To show diversity and controllability. We
-          generate the following videos with the same boxes & road maps & ego
-          trajectory from the validation split of the Waymo Open Dataset.
-          We use different text prompts to change the
-          weather/time-of-day/background of each video. All videos are with
-          3&times;848&times;1600, 193 frames at 10 FPS from single inference.
-          Only 3 same-sized views are available in Waymo for training.</p>
-
-        <p class="content is-size-4">🌧️Rainy:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_rain.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <p class="content is-size-4">🌫️Foggy:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_foggy.mp4"
-              type="video/mp4">
-          </video>
-        </div>
-
-        <p class="content is-size-4">🌙At Night:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_night.mp4"
-              type="video/mp4">
-          </video>
-        </div>
-
-        <p class="content is-size-4">🌄Twilight:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_dusk.mp4" type="video/mp4">
-          </video>
-        </div>
-
-        <p class="content is-size-4">☀️Sunny:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_sunny.mp4"
-              type="video/mp4">
-          </video>
-        </div>
-
-        <p class="content is-size-4">🏞Hill area, more trees🌳, less buildings:</p>
-        <div class="columns is-centered">
-          <video playsinline controls muted loop autoplay width="80%">
-            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_hill2.mp4"
-              type="video/mp4">
-          </video>
-        </div>
-
-        <br>
-      </div>
-    </div>
-  </section>
-
   <section class="hero teaser">
     <div class="container is-max-desktop">
       <div class="hero-body">
@@ -680,6 +615,72 @@ for Autonomous Driving with Adaptive Control">
       });
     });
   </script>
+
+  <section class="hero is-small is-light">
+    <div class="hero-body">
+      <div class="container">
+        <h2 class="title is-3"><mark>Extension</mark>: Fine-tuned
+          results on Waymo Open Dataset with Rich Text Control.</h2>
+
+        <p class="content is-size-5">To show diversity and controllability. We
+          generate the following videos with the same boxes & road maps & ego
+          trajectory from the validation split of the Waymo Open Dataset.
+          We use different text prompts to change the
+          weather/time-of-day/background of each video (<mark>from Sec. 4.4 of our
+          paper</mark>). All videos are with 3&times;848&times;1600, 193 frames at 10
+          FPS from single inference. Only 3 same-sized views are available in
+          Waymo for training.</p>
+
+        <p class="content is-size-4">🌧️Rainy:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_rain.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <p class="content is-size-4">🌫️Foggy:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_foggy.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+
+        <p class="content is-size-4">🌙At Night:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_night.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+
+        <p class="content is-size-4">🌄Twilight:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_dusk.mp4" type="video/mp4">
+          </video>
+        </div>
+
+        <p class="content is-size-4">☀️Sunny:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_sunny.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+
+        <p class="content is-size-4">🏞Hill area, more trees🌳, less buildings:</p>
+        <div class="columns is-centered">
+          <video playsinline controls muted loop autoplay width="80%">
+            <source src="./static/video/waymo/sample_0090_848x4800_f193_fps10_full_sp8_slice_hill2.mp4"
+              type="video/mp4">
+          </video>
+        </div>
+
+        <br>
+      </div>
+    </div>
+  </section>
 
   <footer class="footer">
     <div class="container">
